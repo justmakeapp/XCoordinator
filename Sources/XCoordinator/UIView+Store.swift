@@ -8,6 +8,7 @@
 
 import UIKit
 
+@MainActor
 private var associatedObjectHandle: UInt8 = 0
 
 extension UIView {

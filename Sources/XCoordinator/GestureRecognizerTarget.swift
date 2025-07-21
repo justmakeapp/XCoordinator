@@ -7,6 +7,7 @@
 
 import UIKit
 
+@MainActor
 internal protocol GestureRecognizerTarget {
     var gestureRecognizer: UIGestureRecognizer? { get }
 }

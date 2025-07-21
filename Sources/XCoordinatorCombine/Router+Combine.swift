@@ -11,6 +11,7 @@
 import Combine
 import XCoordinator
 
+@MainActor
 public struct PublisherExtension<Base> {
     public let base: Base
 }

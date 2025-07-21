@@ -39,7 +39,7 @@ public struct Transition<RootViewController: UIViewController>: TransitionProtoc
     ///         The completion handler of the transition.
     ///         It is called when the transition (including all animations) is completed.
     ///
-    public typealias PerformClosure = (_ rootViewController: RootViewController,
+    public typealias PerformClosure = @MainActor (_ rootViewController: RootViewController,
                                        _ options: TransitionOptions,
                                        _ completion: PresentationHandler?) -> Void
 
