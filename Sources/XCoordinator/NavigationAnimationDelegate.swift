@@ -30,7 +30,7 @@ open class NavigationAnimationDelegate: NSObject {
     // MARK: Stored properties
 
     /// The velocity threshold needed for the interactive pop transition to succeed
-    open var velocityThreshold: CGFloat { UIScreen.main.bounds.width / 2 }
+    open var velocityThreshold: CGFloat { (navigationController?.view.bounds.width ?? 0) / 2 }
 
     /// The transition progress threshold for the interactive pop transition to succeed
     open var transitionProgressThreshold: CGFloat { 0.5 }
